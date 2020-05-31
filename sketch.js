@@ -74,7 +74,7 @@ function draw() {
   
  if(gameState === PLAY){
     //move the ground
-   
+   ground.velocityX = -(4 + 3*score/100);
     //scoring
     score = score + Math.round(getFrameRate()/60);
     
